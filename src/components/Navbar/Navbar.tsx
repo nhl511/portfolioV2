@@ -16,6 +16,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import styles from "./navbar.module.css";
 import NavItem from "./NavItem/NavItem";
+import { ThemeProvider, createTheme } from "@mui/material";
 
 interface Props {
   /**
@@ -54,6 +55,12 @@ export default function DrawerAppBar(props: Props) {
     setMobileOpen((prevState) => !prevState);
   };
 
+  //   const darkTheme = createTheme({
+  //     palette: {
+  //       mode: "dark",
+  //     },
+  //   });
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h6" sx={{ my: 2 }}>
@@ -76,9 +83,10 @@ export default function DrawerAppBar(props: Props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
+    // <ThemeProvider theme={darkTheme}>
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" className={styles.appBar}>
+      <AppBar component="nav" color="primary" className={styles.appBar}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -140,5 +148,6 @@ export default function DrawerAppBar(props: Props) {
         </Drawer>
       </nav>
     </Box>
+    // </ThemeProvider>
   );
 }
