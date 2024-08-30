@@ -23,7 +23,7 @@ export default function Home() {
         >
           <div>
             <Typography variant="subtitle1" fontWeight={300}>
-              Hello World, I'm
+              Hello World, I&apos;m
             </Typography>
             <Typography variant="h3" gutterBottom={true} fontWeight={700}>
               Hoang Long
