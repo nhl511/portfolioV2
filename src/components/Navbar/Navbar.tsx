@@ -108,7 +108,7 @@ export default function DrawerAppBar(props: Props) {
             }}
           >
             {publicLinks.map((link: LinkType) => (
-              <NavItem link={link} />
+              <NavItem key={link.path} link={link} />
             ))}
           </Box>
           <Box
