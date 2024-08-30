@@ -1,0 +1,12 @@
+.container {
+  padding-bottom: 5px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.active {
+  font-weight: bold;
+  color: var(--titleText-color);
+  border-bottom: 4px solid var(--yellow);
+  transition: 0.5s all ease;
+}
