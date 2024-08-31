@@ -5,7 +5,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
-  const me = require("../../public/me.jpeg");
+  const me = require("../../public/images/me.jpeg");
 
   return (
     <div className={styles.container}>
@@ -49,7 +49,7 @@ export default function Home() {
               repeat={Infinity}
             />
             <Typography variant="subtitle1" fontWeight={500}>
-              Welcome to My personal webiste.
+              Welcome to My personal website.
             </Typography>
           </div>
         </Grid2>

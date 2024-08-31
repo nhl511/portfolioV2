@@ -1,0 +1,23 @@
+.container {
+  border: 2px solid var(--lighter-gray);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.3s all ease;
+}
+.imageContainer {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  background: var(--hover-gray);
+}
+.container:hover .imageContainer {
+  transform: scale(1.1);
+}

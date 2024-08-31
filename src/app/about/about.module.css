@@ -1,0 +1,27 @@
+.top {
+  margin-top: 64px;
+  background-color: var(--darker-gray);
+  padding: 50px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.titleContainer {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bar {
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+.imageWrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #ffd43b;
+}

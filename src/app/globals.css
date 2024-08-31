@@ -2,7 +2,11 @@
   --black: #0e0e0e;
   --white: #ffffff;
   --yellow: #f5e1a7;
+  --lighter-yellow: #302b22;
   --gray: #3c3c3e;
+  --darker-gray: #202020;
+  --lighter-gray: #848484;
+  --hover-gray: #2f2a21;
 }
 
 /* app/globals.css */

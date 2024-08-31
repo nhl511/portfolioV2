@@ -1,0 +1,12 @@
+.buttonWrapper {
+  margin-bottom: 20px;
+}
+
+.button {
+  color: var(--lighter-gray) !important;
+}
+
+.active {
+  background: var(--lighter-yellow) !important;
+  color: var(--yellow) !important;
+}
