@@ -53,8 +53,8 @@ const Techs = () => {
   return (
     <Grid2 container spacing={4}>
       {items.map((item) => (
-        <Grid2 size={{ xs: 6, md: 4, lg: 3 }}>
-          <Item key={item.title} item={item} />
+        <Grid2 key={item.title} size={{ xs: 6, md: 4, lg: 3 }}>
+          <Item item={item} />
         </Grid2>
       ))}
     </Grid2>
