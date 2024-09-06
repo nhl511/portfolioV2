@@ -1,0 +1,8 @@
+.card {
+  background-color: var(--light-black) !important;
+  color: var(--white) !important;
+}
+.cardActions {
+  display: flex;
+  justify-content: end;
+}
