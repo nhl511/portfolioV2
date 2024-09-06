@@ -47,7 +47,7 @@ const PortfolioPage = () => {
           Past Project Experience
         </Typography>
         <Typography variant="subtitle1" sx={{ fontWeight: "300" }}>
-          Explore the projects I've worked on so far
+          Explore the projects I&apos;ve worked on so far
         </Typography>
       </div>
       <div className={styles.bottom}>
