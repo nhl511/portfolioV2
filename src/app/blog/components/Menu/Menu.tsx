@@ -14,7 +14,7 @@ const Menu = ({
   return (
     <div className={styles.container}>
       <Typography variant="subtitle1" sx={{ fontWeight: "300" }}>
-        Let's share experiences, stories, and knowledge together.
+        Let&apos; share experiences, stories, and knowledge together.
       </Typography>
       <div className={styles.bar}></div>
       <div>
