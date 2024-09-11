@@ -4,7 +4,7 @@
   background-color: var(--light-black) !important;
   color: var(--white) !important;
   transform: translateY(0);
-  transition: 0.3s all ease;
+  transition: 0.3s all ease !important;
 }
 
 .imageWrapper {

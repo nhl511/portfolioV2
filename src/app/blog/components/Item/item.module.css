@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  transition: transform 0.3s ease-in-out !important;
 }
 .left {
   flex: 1;
