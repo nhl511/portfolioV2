@@ -51,14 +51,14 @@ const page = () => {
               gap: "20px",
             }}
           >
-            <Typography variant="body2">
+            <Typography variant="body2" className={styles.para1}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
               doloremque inventore expedita ab vero optio ea quibusdam minima
               maxime laudantium, vel odio facere ipsam sed quasi, corporis
               quaerat illo? Ad doloremque pariatur magnam facilis ut cupiditate
               debitis! Asperiores expedita corrupti quo numquam laudantium ea.
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body2" className={styles.para2}>
               Vel rem repellendus! Sed odit magni rerum hic vel delectus quaerat
               laboriosam, quae provident quas animi, deserunt fugiat distinctio
               maiores et saepe. Veniam architecto earum totam ipsum nemo sunt

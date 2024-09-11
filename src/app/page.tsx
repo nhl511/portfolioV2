@@ -48,8 +48,12 @@ export default function Home() {
               }}
               repeat={Infinity}
             />
-            <Typography variant="subtitle1" fontWeight={500}>
-              Welcome to My personal website.
+            <Typography
+              variant="subtitle1"
+              fontWeight={500}
+              className={styles.greeting}
+            >
+              Welcome to My personal website 👋
             </Typography>
           </div>
         </Grid2>

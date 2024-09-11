@@ -9,14 +9,6 @@ export const metadata: Metadata = {
 };
 const projects: projectType[] = [
   {
-    title: "Personal Website",
-    des: "My personal website. I created this website to display my profile, skills and projects. As well as my place to try new technology.",
-    techs: "NextJs, Material UI",
-    imgUrl: "/images/personal-website.png",
-    url: "https://long-portfolio.vercel.app",
-    source: "https://github.com/nhl511/portfolioV2",
-  },
-  {
     title: "EngVoca",
     des: "My website offers all the vocabulary from 12 grades of English in Vietnam. Learn, practice, and test your knowledge while tracking which words you’ve mastered and which still need improvement.",
     techs:
@@ -37,6 +29,14 @@ const projects: projectType[] = [
     techs: "ReactJs",
     imgUrl: "/images/voice-spire.png",
     source: "https://github.com/nhl511/voice-spire-client",
+  },
+  {
+    title: "Personal Website",
+    des: "My personal website. I created this website to display my profile, skills and projects. As well as my place to try new technology.",
+    techs: "NextJs, Material UI",
+    imgUrl: "/images/personal-website.png",
+    url: "https://long-portfolio.vercel.app",
+    source: "https://github.com/nhl511/portfolioV2",
   },
 ];
 const PortfolioPage = () => {

@@ -7,6 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { Container } from "@mui/material";
+import SnackbarProvider from "@/context/SnackbarContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,8 +28,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Container fixed>
-          <Navbar />
-          {children}
+          <SnackbarProvider>
+            <Navbar />
+            <main>{children}</main>
+          </SnackbarProvider>
         </Container>
       </body>
     </html>

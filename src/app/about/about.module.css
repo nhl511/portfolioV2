@@ -12,10 +12,19 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  animation: slide-down 0.6s ease-out forwards;
 }
 .bar {
   border-bottom: 2px solid white;
   width: 100%;
+}
+.para1 {
+  animation: slide-left 0.6s ease-out forwards;
+}
+.para2 {
+  opacity: 0;
+  animation: slide-left 0.6s ease-out forwards;
+  animation-delay: 0.6s;
 }
 .imageWrapper {
   position: relative;
@@ -24,4 +33,38 @@
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #ffd43b;
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%); /* Start from above the viewport */
+    opacity: 0; /* Optional: makes the element fade in */
+  }
+  100% {
+    transform: translateY(0); /* End at the original position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%); /* Start at the original position */
+    opacity: 0; /* Fully visible */
+  }
+  100% {
+    transform: translateY(0); /* Move up and out of view */
+    opacity: 1; /* Fade out */
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+    opacity: 0; /* Optional: makes the element fade in */
+  }
+  100% {
+    transform: translateX(0); /* End at the original position */
+    opacity: 1; /* Fully visible */
+  }
 }

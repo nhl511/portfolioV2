@@ -1,6 +1,5 @@
 "use client";
 import {
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -12,19 +11,27 @@ import React from "react";
 import styles from "./item.module.css";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Image from "next/image";
+import { useSnackbar } from "@/context/SnackbarContext";
 
 const Item = ({ item }: { item: projectType }) => {
   const handleLearnMoreClick = (url: any) => {
     window.open(url, "_blank");
   };
+
+  const { showSnackbar } = useSnackbar();
+
+  const handleClick = () => {
+    showSnackbar("Comming soon!");
+  };
+
   return (
-    <Card className={styles.card}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="200"
-        image={item.imgUrl}
-      />
+    <Card className={styles.card} elevation={3} onClick={handleClick}>
+      <CardMedia>
+        <div className={styles.imageWrapper}>
+          <Image src={item.imgUrl} layout="fill" objectFit="cover" alt="" />
+        </div>
+      </CardMedia>
       <CardContent>
         <Typography
           gutterBottom
@@ -51,7 +58,10 @@ const Item = ({ item }: { item: projectType }) => {
           disabled={item.source ? false : true}
           size="small"
           sx={{ color: "#ffffff" }}
-          onClick={() => handleLearnMoreClick(item.source)}
+          onClick={(e) => {
+            handleLearnMoreClick(item.source);
+            e.stopPropagation();
+          }}
         >
           <GitHubIcon fontSize="inherit" />
         </IconButton>
@@ -60,7 +70,10 @@ const Item = ({ item }: { item: projectType }) => {
           disabled={item.url ? false : true}
           size="small"
           sx={{ color: "#ffffff" }}
-          onClick={() => handleLearnMoreClick(item.url)}
+          onClick={(e) => {
+            handleLearnMoreClick(item.url);
+            e.stopPropagation();
+          }}
         >
           <OpenInNewIcon fontSize="inherit" />
         </IconButton>

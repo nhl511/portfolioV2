@@ -16,3 +16,11 @@ interface projectType {
   url?: string;
   source?: string;
 }
+
+interface blogType {
+  date: string;
+  title: string;
+  content: string;
+  imageUrl: string;
+  topic: string;
+}

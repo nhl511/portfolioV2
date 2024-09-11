@@ -1,0 +1,8 @@
+.chip {
+  background-color: var(--light-black) !important;
+  color: white !important;
+}
+.active {
+  color: var(--yellow) !important;
+  background: var(--lighter-yellow) !important;
+}
