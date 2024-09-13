@@ -1,0 +1,29 @@
+.container {
+}
+.top {
+  padding: 24px 20px;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 15px 10px -15px #000;
+}
+.info {
+  font-weight: 900;
+  cursor: pointer;
+}
+.info:hover {
+  text-decoration: underline;
+}
+.bottom {
+  padding: 100px 20px 0 20px;
+  background-color: black;
+  z-index: -999;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.imageWrapper {
+  width: 100%;
+}

@@ -9,7 +9,6 @@ import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
@@ -43,7 +42,6 @@ const publicLinks: LinkType[] = [
     path: "/blog",
   },
 ];
-const navItems = ["Home", "About", "Portfolio", "Blog"];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -60,14 +58,6 @@ export default function DrawerAppBar(props: Props) {
       </Typography>
       <Divider />
       <List>
-        {/* {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))} */}
-
         {publicLinks.map((link: LinkType) => (
           <ListItem key={link.path} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>

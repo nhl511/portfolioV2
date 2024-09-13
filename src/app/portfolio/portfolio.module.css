@@ -1,3 +1,7 @@
+.container {
+  min-height: 100vh;
+  padding-bottom: 200px;
+}
 .top {
   margin-top: 75px;
   text-align: center;

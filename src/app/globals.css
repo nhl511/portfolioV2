@@ -26,8 +26,14 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.6;
-  background-color: var(--black) !important;
   color: var(--white) !important;
+  background-color: var(--black) !important;
+}
+
+.container {
+  z-index: 99;
+  background-color: var(--black) !important;
+  margin-bottom: 320px;
 }
 
 /* Anchor tags styling */
@@ -41,3 +47,23 @@ a {
 /* Heading styles */
 
 /* Example of custom button styles */
+
+@media (max-width: 599px) {
+  .container {
+    margin-bottom: 100px;
+  }
+}
+
+/* Small devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .container {
+    margin-bottom: 180px;
+  }
+}
+
+/* Medium devices (small laptops, 900px and up) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .container {
+    margin-bottom: 250px;
+  }
+}
