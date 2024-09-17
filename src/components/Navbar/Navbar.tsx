@@ -11,9 +11,10 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import styles from "./navbar.module.css";
 import NavItem from "./NavItem/NavItem";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 interface Props {
   /**
@@ -22,7 +23,6 @@ interface Props {
    */
   window?: () => Window;
 }
-
 const drawerWidth = 240;
 const publicLinks: LinkType[] = [
   {
@@ -44,6 +44,8 @@ const publicLinks: LinkType[] = [
 ];
 
 export default function DrawerAppBar(props: Props) {
+  const router = useRouter();
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -52,10 +54,21 @@ export default function DrawerAppBar(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+    <Box className={styles.drawer} onClick={handleDrawerToggle}>
+      {/* <Typography variant="h6" sx={{ my: 2 }}>
         fstackdev
-      </Typography>
+      </Typography> */}
+      <Box sx={{ my: 2 }}>
+        <div className={styles.logoWrapper} style={{ marginLeft: "16px" }}>
+          <Image
+            src="/images/Fstackdev.svg"
+            layout="fill"
+            objectFit="contain"
+            alt=""
+            onClick={() => router.push("/")}
+          />
+        </div>
+      </Box>
       <Divider />
       <List>
         {publicLinks.map((link: LinkType) => (
@@ -86,7 +99,7 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{
@@ -95,7 +108,23 @@ export default function DrawerAppBar(props: Props) {
             }}
           >
             fstackdev
-          </Typography>
+          </Typography> */}
+          <Box
+            sx={{
+              flex: 1,
+              display: { xs: "none", sm: "block" },
+            }}
+          >
+            <div className={styles.logoWrapper}>
+              <Image
+                src="/images/Fstackdev.svg"
+                layout="fill"
+                objectFit="contain"
+                alt=""
+                onClick={() => router.push("/")}
+              />
+            </div>
+          </Box>
           <Box
             sx={{
               flex: 1,

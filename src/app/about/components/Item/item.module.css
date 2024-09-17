@@ -5,14 +5,24 @@
   gap: 15px;
   padding: 10px;
   border-radius: 5px;
-  transition: 0.3s all ease;
+  transition: 0.5s all ease;
+  height: 72.07px;
 }
 .imageContainer {
   position: relative;
   width: 40px;
   height: 40px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
+}
+.level {
+  position: absolute; /* Position .level absolutely within .container */
+  bottom: 100%; /* Initially position .level above the parent */
+  left: 0; /* Align to the left edge of .container */
+  width: 100%; /* Make sure it takes the full width of .container */
+  opacity: 0; /* Start as invisible */
+  transform: translateY(20px); /* Start slightly moved down */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transitions for opacity and transform */
 }
 
 .container:hover {
@@ -20,4 +30,11 @@
 }
 .container:hover .imageContainer {
   transform: scale(1.1);
+}
+
+.container:hover .level {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make it visible */
+  transform: translateY(0); /* Move the element back to its original position */
+  position: relative; /* Return to document flow */
 }

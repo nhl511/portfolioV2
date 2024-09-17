@@ -5,6 +5,7 @@ interface LinkType {
 
 interface itemType {
   title: string;
+  level: string;
   imageUrl: string;
 }
 

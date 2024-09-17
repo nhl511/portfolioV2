@@ -7,18 +7,22 @@ const Tools = () => {
     {
       title: "Git",
       imageUrl: "/images/git.webp",
+      level: "Intermediate",
     },
     {
       title: "Github",
       imageUrl: "/images/github.jpeg",
+      level: "Intermediate",
     },
     {
       title: "NPM",
       imageUrl: "/images/npm.png",
+      level: "Intermediate",
     },
     {
       title: "Postman",
       imageUrl: "/images/postman.svg",
+      level: "Basic",
     },
   ];
   return (

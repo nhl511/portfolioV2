@@ -8,7 +8,18 @@ const Item = ({ item }: { item: itemType }) => {
       <div className={styles.imageContainer}>
         <Image src={item.imageUrl} layout="fill" objectFit="cover" alt="" />
       </div>
-      <Typography>{item.title}</Typography>
+      <div className={styles.wrapper}>
+        <Typography
+          variant="subtitle1"
+          className={styles.title}
+          sx={{ fontWeight: "700" }}
+        >
+          {item.title}
+        </Typography>
+        <Typography variant="body2" className={styles.level}>
+          {item.level}
+        </Typography>
+      </div>
     </div>
   );
 };
