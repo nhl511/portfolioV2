@@ -52,21 +52,14 @@ const page = () => {
             }}
           >
             <Typography variant="body2" className={styles.para1}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
-              doloremque inventore expedita ab vero optio ea quibusdam minima
-              maxime laudantium, vel odio facere ipsam sed quasi, corporis
-              quaerat illo? Ad doloremque pariatur magnam facilis ut cupiditate
-              debitis! Asperiores expedita corrupti quo numquam laudantium ea.
+                I’m a Front-End Developer passionate about crafting optimized web interfaces and seamless user experiences. Proficient in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and frameworks like <b>React.js</b> and <b>Next.js</b>, I enjoy building dynamic, responsive applications that perform efficiently.
             </Typography>
             <Typography variant="body2" className={styles.para2}>
-              Vel rem repellendus! Sed odit magni rerum hic vel delectus quaerat
-              laboriosam, quae provident quas animi, deserunt fugiat distinctio
-              maiores et saepe. Veniam architecto earum totam ipsum nemo sunt
-              rerum quia praesentium. Quaerat, dicta dolorum? Voluptatem
-              excepturi vel culpa veniam minima possimus explicabo consequuntur
-              ad earum commodi doloribus quaerat, alias nostrum, cumque dolorem
-              quos libero dolor.
+                With experience in <b>API integration, web performance optimization, and cloud deployment</b>, I strive to develop modern, scalable solutions. I also work with <b>UI libraries</b> like Material-UI and Tailwind CSS to create clean and accessible designs.
             </Typography>
+              <Typography variant="body2" className={styles.para3}>
+                  Constantly learning and exploring new technologies, I am eager to contribute to innovative projects that push the boundaries of front-end development.
+              </Typography>
           </Grid2>
         </Grid2>
       </div>

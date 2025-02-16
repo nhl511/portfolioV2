@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 };
 const projects: projectType[] = [
   {
+    title: "MyTV",
+    des: "As a project in my internship program. I developed a clone based on an existing website and provided API.",
+    techs:
+        "NextJs, ShadCN/UI, Tailwind, Zustand, Axios, SWR, Video.js",
+    imgUrl: "/images/mytv.png",
+    source: "https://github.com/nhl511/mytv-clone",
+  },
+  {
+    title: "VNPT Portal",
+    des: "As a project in my internship program. I developed a clone based on an existing website and provided API.",
+    techs:
+        "NextJs, ShadCN/UI, Tailwind, Zustand, Axios, SWR",
+    imgUrl: "/images/vnpt-portal.png",
+    source: "https://github.com/nhl511/vnptna-clone",
+  },
+  {
     title: "EngVoca",
     des: "My website offers all the vocabulary from 12 grades of English in Vietnam. Learn, practice, and test your knowledge while tracking which words you’ve mastered and which still need improvement.",
     techs:

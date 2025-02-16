@@ -25,3 +25,9 @@ interface blogType {
   imageUrl: string;
   topic: string;
 }
+
+interface aboutButtonType {
+  title: string;
+  className: string;
+  action: () => void;
+}
