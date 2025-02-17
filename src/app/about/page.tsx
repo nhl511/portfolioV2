@@ -52,19 +52,21 @@ const page = () => {
                         }}
                     >
                         <Typography variant="body2" className={styles.para1}>
-                            I’m a Front-End Developer passionate about crafting optimized web interfaces and seamless
-                            user experiences. Proficient in <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, and frameworks
-                            like <b>React.js</b> and <b>Next.js</b>, I enjoy building dynamic, responsive applications
-                            that perform efficiently.
+                            I’m a Full-Stack Developer passionate about building optimized web applications with
+                            seamless user experiences. Proficient in <b>React.js, Next.js</b> for the Frontend and <b>Node.js,
+                            Express.js</b> for the Backend, I enjoy developing dynamic, efficient, and scalable web
+                            solutions.
                         </Typography>
                         <Typography variant="body2" className={styles.para2}>
-                            With experience in <b>API integration, web performance optimization, and cloud
-                            deployment</b>, I strive to develop modern, scalable solutions. I also work with <b>UI
-                            libraries</b> like Material-UI and Tailwind CSS to create clean and accessible designs.
+                            With experience in <b>RESTful API development, database management (MySQL, MongoDB)</b>,
+                            and <b>query optimization</b>, I focus on creating high-performance applications. I also
+                            have hands-on experience with <b>AWS services (EC2, RDS)</b> and deployment
+                            on <b>Vercel</b> and other cloud platforms.
                         </Typography>
                         <Typography variant="body2" className={styles.para3}>
-                            Constantly learning and exploring new technologies, I am eager to contribute to innovative
-                            projects that push the boundaries of front-end development.
+                            Constantly learning and exploring new technologies, I aim to craft innovative solutions that
+                            enhance user interaction and performance. I thrive in collaborative environments and look
+                            forward to contributing to impactful projects.
                         </Typography>
                     </Grid2>
                 </Grid2>

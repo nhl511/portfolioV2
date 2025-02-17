@@ -14,17 +14,12 @@ const Skills = () => {
             action: () => setOptions(ABOUT_TYPE.LANGUAGES),
         },
         {
-            title: "frontend frameworks",
+            title: "frontend",
             className: `${styles.button} ${options === ABOUT_TYPE.FRONT_END_FRAMEWORKS_AND_LIBRARIES && styles.active}`,
             action: () => setOptions(ABOUT_TYPE.FRONT_END_FRAMEWORKS_AND_LIBRARIES),
         },
         {
-            title: "styling",
-            className: `${styles.button} ${options === ABOUT_TYPE.STYLING && styles.active}`,
-            action: () => setOptions(ABOUT_TYPE.STYLING),
-        },
-        {
-            title: "backend frameworks",
+            title: "backend",
             className: `${styles.button} ${options === ABOUT_TYPE.BACKEND_FRAMEWORKS && styles.active}`,
             action: () => setOptions(ABOUT_TYPE.BACKEND_FRAMEWORKS),
         },
@@ -32,6 +27,11 @@ const Skills = () => {
             title: "databases",
             className: `${styles.button} ${options === ABOUT_TYPE.DATABASES && styles.active}`,
             action: () => setOptions(ABOUT_TYPE.DATABASES),
+        },
+        {
+            title: "cloud",
+            className: `${styles.button} ${options === ABOUT_TYPE.CLOUD && styles.active}`,
+            action: () => setOptions(ABOUT_TYPE.CLOUD),
         },
         {
             title: "tools",
@@ -44,6 +44,11 @@ const Skills = () => {
         {
             title: "HTML",
             imageUrl: "/images/html.png",
+            level: "Advanced",
+        },
+        {
+            title: "CSS",
+            imageUrl: "/images/css.png",
             level: "Advanced",
         },
         {
@@ -70,13 +75,20 @@ const Skills = () => {
             imageUrl: "/images/nextjs.png",
             level: "Intermediate",
         },
-    ]
-
-    const styling: itemType[] = [
         {
-            title: "CSS",
-            imageUrl: "/images/css.png",
-            level: "Advanced",
+            title: "Axios",
+            imageUrl: "/images/axios.jpg",
+            level: "Intermediate",
+        },
+        {
+            title: "SWR",
+            imageUrl: "/images/swr.png",
+            level: "Intermediate",
+        },
+        {
+            title: "Redux",
+            imageUrl: "/images/redux.png",
+            level: "Basic",
         },
         {
             title: "Tailwind CSS",
@@ -103,7 +115,13 @@ const Skills = () => {
             imageUrl: "/images/ant.png",
             level: "Intermediate",
         },
+        {
+            title: "SCSS",
+            imageUrl: "/images/scss.webp",
+            level: "Basic",
+        },
     ]
+
 
     const backend: itemType[] = [
         {
@@ -114,6 +132,26 @@ const Skills = () => {
         {
             title: "Express.JS",
             imageUrl: "/images/expressjs.png",
+            level: "Intermediate",
+        },
+        {
+            title: "Sequelize",
+            imageUrl: "/images/sequelize.png",
+            level: "Intermediate",
+        },
+        {
+            title: "Mongoose",
+            imageUrl: "/images/mongoose.jpeg",
+            level: "Intermediate",
+        },
+        {
+            title: "Nodemailer",
+            imageUrl: "/images/nodemailer.svg",
+            level: "Basic",
+        },
+        {
+            title: "JWT",
+            imageUrl: "/images/jwt.png",
             level: "Intermediate",
         },
     ]
@@ -129,10 +167,18 @@ const Skills = () => {
             imageUrl: "/images/mongodb.svg",
             level: "Intermediate",
         },
+    ]
+
+    const cloud: itemType[] = [
         {
-            title: "Sequelize",
-            imageUrl: "/images/sequelize.png",
-            level: "Intermediate",
+            title: "AWS",
+            imageUrl: "/images/aws.jpeg",
+            level: "Basic",
+        },
+        {
+            title: "GCP",
+            imageUrl: "/images/gcp.jpeg",
+            level: "Basic",
         },
     ]
 
@@ -157,6 +203,11 @@ const Skills = () => {
             imageUrl: "/images/postman.svg",
             level: "Basic",
         },
+        {
+            title: "Figma",
+            imageUrl: "/images/figma.png",
+            level: "Basic",
+        },
     ];
     const renderContent = () => {
         switch (options) {
@@ -164,8 +215,8 @@ const Skills = () => {
                 return <Techs items={languages}/>;
             case ABOUT_TYPE.FRONT_END_FRAMEWORKS_AND_LIBRARIES:
                 return <Techs items={frontend}/>
-            case ABOUT_TYPE.STYLING:
-                return <Techs items={styling}/>
+            case ABOUT_TYPE.CLOUD:
+                return <Techs items={cloud}/>
             case ABOUT_TYPE.BACKEND_FRAMEWORKS:
                 return <Techs items={backend}/>
             case ABOUT_TYPE.DATABASES:
