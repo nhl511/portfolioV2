@@ -1,33 +1,33 @@
 interface LinkType {
-  title: string;
-  path: string;
+    title: string;
+    path: string;
 }
 
 interface itemType {
-  title: string;
-  level: string;
-  imageUrl: string;
+    title: string;
+    level: string;
+    imageUrl: string;
 }
 
 interface projectType {
-  title: string;
-  des: string;
-  techs: string;
-  imgUrl: string;
-  url?: string;
-  source?: string;
+    title: string;
+    des: string;
+    techs: string;
+    imgUrl: string;
+    url?: string;
+    source?: string;
 }
 
 interface blogType {
-  date: string;
-  title: string;
-  content: string;
-  imageUrl: string;
-  topic: string;
+    date: string;
+    title: string;
+    content: string;
+    imageUrl: string;
+    topic: string;
 }
 
 interface aboutButtonType {
-  title: string;
-  className: string;
-  action: () => void;
+    title: string;
+    className: string;
+    action: () => void;
 }
